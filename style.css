@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Zera as margens e o padding de todos os elementos e define box-sizing para "border-box" 
+    para garantir que padding e bordas sejam incluídos no tamanho total do elemento. 
+   Isso ajuda a manter um layout consistente. */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Define a fonte padrão para todo o documento como "Montserrat" com uma fonte de fallback "sans-serif". 
+   O fundo do corpo é um cinza claro (#f4f4f4), e a cor do texto é um cinza escuro (#333). */
+
+header {
+    background-color: #0ca5b0;
+    /* Cor de fundo do cabeçalho é um azul esverdeado (#0ca5b0). */
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+/* Cor do texto do cabeçalho é um cinza claro (#ecf0f1), e um padding vertical de 20px. */
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Define o tamanho da fonte do título no cabeçalho como 2.5rem e torna a fonte em negrito. */
+
+header nav ul {
+    list-style-type: none;
+}
+
+/* Remove os marcadores de lista (list-style) da lista de navegação. */
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/* Define os itens da lista de navegação (li) como elementos inline e aplica um espaçamento de 20px entre eles. */
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Links de navegação recebem uma cor (#ecf0f1) e nenhuma sublinhado (text-decoration: none). 
+   O tamanho da fonte é definido como 18px. */
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Adiciona um sublinhado aos links quando o cursor passa sobre eles (efeito hover). */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* O contêiner do cabeçalho usa Flexbox para distribuir o conteúdo horizontalmente entre o logo/título e a navegação. 
+   Alinha verticalmente os itens ao centro e aplica um padding de 20px ao redor. */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Define o contêiner principal para centralizar o conteúdo e limita sua largura máxima a 1200px. 
+   Também adiciona padding de 20px nas laterais para criar espaçamento interno. */
+
+section {
+    padding: 60px 0;
+}
+
+/* Define um espaçamento (padding) de 60px acima e abaixo de cada seção, criando espaço entre o conteúdo. */
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0ca5b0;
+}
+
+/* O título de segundo nível (h2) dentro de uma seção tem um tamanho de fonte de 2rem, 
+   uma margem inferior de 20px para separar do conteúdo, e a cor é #0ca5b0 (azul esverdeado). */
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+/* Define o tamanho do parágrafo para 1.1rem e adiciona um espaçamento inferior de 16px. */
+
+.business-growth {
+    max-width: 100%;
+    margin-right: 30px;
+}
+
+/* Define a largura máxima da imagem dentro da classe "business-growth" para 100% do seu contêiner e adiciona uma margem à direita de 30px. */
+
+#about .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Na seção "about", o contêiner utiliza Flexbox e alinha os itens no início do eixo vertical (alinhamento ao topo). */
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* A área "contact-methods" usa Flexbox para distribuir o conteúdo igualmente entre as colunas e aplica um espaçamento superior de 40px. */
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Os elementos de formulário (input, textarea e button) são definidos como blocos com uma largura fixa de 320px, 
+   espaçamento inferior de 10px, padding interno de 15px e tamanho de fonte de 1rem. */
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* O campo de textarea tem altura de 150px e a opção de redimensionamento foi desativada (resize: none). */
+
+section h3 {
+    margin-bottom: 20px;
+}
+
+/* Define um espaçamento inferior de 20px para os títulos de terceiro nível (h3) dentro das seções. */
+
+form button {
+    background-color: #0ca5b0;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* O botão do formulário tem a cor de fundo #0ca5b0, cor do texto #ecf0f1, 
+   sem bordas e o cursor do mouse muda para "pointer" ao passar sobre ele (indicando que o botão é clicável). */
+
+form button:hover {
+    background-color: #4e3f30;
+}
+
+/* No estado de hover, a cor de fundo do botão muda para #4e3f30 (um tom mais escuro). */
+
+.social-links img {
+    height: 24px;
+}
+
+/* Define a altura das imagens de links sociais como 24px. */
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Define os itens da lista de links sociais como elementos inline e adiciona um espaçamento à direita de 10px entre eles. */
+
+footer {
+    background-color: #0ca5b0;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* O rodapé tem uma cor de fundo #0ca5b0, texto de cor #ecf0f1, o conteúdo é centralizado (text-align: center), 
+   e há padding de 20px no topo e na base do rodapé. */
